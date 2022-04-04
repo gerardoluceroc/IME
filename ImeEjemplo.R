@@ -68,9 +68,12 @@ media <- mean(vector1)
 #dataframe <- rbind ( dataframe , nueva )
 
 datosIris <- iris
-versicolor <- datosIris %>% dplyr::filter( Species == "versicolor")
+versicolor <- datosIris %>% filter( Species == "versicolor")
 datosMujer <- datosCasen %>% filter( sexo == "Mujer")
 datosMujer1 <- datosCasen %>% filter("edad" == 83)
+petalos <- datosIris %>% select(Species, starts_with("Petal"))
+
+
 
 
 

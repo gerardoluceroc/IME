@@ -1,10 +1,10 @@
 #instalación de paquetes
-install.packages("ggpubr")
-install.packages("dplyr")
-install.packages("assertthat")
-install.packages("magrittr")
-install.packages("tidyr")
-install.packages("lifecycle")
+#install.packages("ggpubr")
+#install.packages("dplyr")
+#install.packages("assertthat")
+#install.packages("magrittr")
+#install.packages("tidyr")
+#install.packages("lifecycle")
 
 #Utilización de paraquetes
 #library(ggpubr)
@@ -16,10 +16,10 @@ install.packages("lifecycle")
 #Se configura la carpeta de trabajo 
 
 #Carpeta PC USACH
-setwd("C:\\Users\\glucero\\Desktop\\IME")
+#setwd("C:\\Users\\glucero\\Desktop\\IME")
 
 #Carpeta PC Casa
-#setwd("C:\\Users\\gerar\\Desktop\\Inferencia y Modelos Estadisticos\\R")
+setwd("C:\\Users\\gerar\\Desktop\\IME")
 
 
 

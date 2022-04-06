@@ -1,4 +1,4 @@
-#instalación de paquetes
+#instalacion de paquetes
 #install.packages("ggpubr")
 #install.packages("dplyr")
 #install.packages("assertthat")
@@ -6,20 +6,23 @@
 #install.packages("tidyr")
 #install.packages("lifecycle")
 
-#Utilización de paraquetes
+#Utilizaci?n de paraquetes
 #library(ggpubr)
-#library(dplyr)
-#library(magrittr)
+library(dplyr)
+library(magrittr)
 #library(tidyr)
 
 
 #Se configura la carpeta de trabajo 
 
-#Carpeta PC USACH
+#Carpeta PC USACH WINDOWS
 #setwd("C:\\Users\\glucero\\Desktop\\IME")
 
+#Carpeta PC USACH UBUNTU
+setwd("/home/usuario/Escritorio/IME")
+
 #Carpeta PC Casa
-setwd("C:\\Users\\gerar\\Desktop\\IME")
+#setwd("C:\\Users\\gerar\\Desktop\\IME")
 
 
 
@@ -58,13 +61,13 @@ media <- mean(vector1)
 #datosCasen$sexo <- NULL
 #datosCasen$sexo <- "indefinido"
 
-# Crear una nueva observaci ón.
-#nueva <- data . frame ( nombre =" Elba Calao del Río",
+# Crear una nueva observaci ?n.
+#nueva <- data . frame ( nombre =" Elba Calao del R?o",
 #                           prueba _1 = 6.4 ,
 #                           prueba _2 = 2.3 ,
 #                           prueba _3 = 4.6 ,
 #                           edad = 24)
-# Agregar la nueva observaci ón al data frame .
+# Agregar la nueva observaci ?n al data frame .
 #dataframe <- rbind ( dataframe , nueva )
 
 datosIris <- iris

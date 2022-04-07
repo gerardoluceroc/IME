@@ -71,18 +71,40 @@ media <- mean(vector1)
 #dataframe <- rbind ( dataframe , nueva )
 
 datosIris <- iris
-versicolor <- datosIris %>% filter( Species == "versicolor")
-datosMujer <- datosCasen %>% filter( sexo == "Mujer")
-datosMujer1 <- datosCasen %>% filter("edad" == 83)
-petalos <- datosIris %>% select(Species, starts_with("Petal"))
+
+#Se obtiene un data frame con los datos de todas las mujeres de los datosCasen
+#datosMujer <- datosCasen %>% filter( sexo == "Mujer")
+
+
+#datosMujer1 <- datosCasen %>% filter("edad" == 83)
+#petalos <- datosIris %>% select(Species, starts_with("Petal"))
+
+
+#Se ordenan los datosCasen por sexo
+#mujeresPrimero <- datosCasen %>% arrange(sexo)
+
+#se ordenan los datosCasen por edad (descendente)
+#edadDesc <- datosCasen %>% arrange(desc(edad))
+
+#se ordenan los datosCasen por edad (ascendente)
+#edadAsc <- datosCasen %>% arrange(edad)
+
+#se modifica el datosCasen seleccionando solo las filas de sexo,edad, estado civil y ch1
+#datosSelect <- datosCasen %>% select(sexo,edad,ecivil,ch1)
+
+#a datos casen se agrega la variable edad -1
+#casenActualizado <- datosCasen %>% mutate(edadNueva = edad - 1)
 
 
 
+#se calcula la media
+media1 <- mean(datosCovid[[X30.06.2020]], na.rm = TRUE)
 
+media2 <- mean(datosCasen[["ytot"]])
 
+covid30 <- datosCovid %>% select(X30.06.2020:X10.09.2020)
 
-
-
+covid30 <- as.Date("X30.06.2020", "%d-%b-%Y")
 
 
 

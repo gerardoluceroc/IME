@@ -98,14 +98,52 @@ datosIris <- iris
 
 
 #se calcula la media
-media1 <- mean(datosCovid[[X30.06.2020]], na.rm = TRUE)
+#media1 <- mean(datosCovid[[X30.06.2020]], na.rm = TRUE)
 
-media2 <- mean(datosCasen[["ytot"]])
+#media2 <- mean(datosCasen[["ytot"]])
 
-covid30 <- datosCovid %>% select(X30.06.2020:X10.09.2020)
+#covid30 <- datosCovid %>% select(X30.06.2020:X10.09.2020)
 
-covid30 <- as.Date("X30.06.2020", "%d-%b-%Y")
-
-
+#covid30 <- as.Date("X30.06.2020", "%d-%b-%Y")
 
 
+#Se calcula la mediana de los sueldos de la encuesta casen
+medianaSueldos <- median(datosCasen[["ytot"]])
+
+
+#se calcula la mediana del sueldo y edad
+#mediana_edad_sueldo <- sapply(datosCasen[["ytot"]], median) #no aplica usarla
+
+#se calcula la varianza de los sueldos
+varianzaSueldos <- var(datosCasen[["ytot"]])
+
+#se calcula la desviacion estandar de los sueldos
+sdSueldos <- sd(datosCasen[["ytot"]])
+
+
+##########################################################################################################
+############################SECTOR HISTOGRAMA###########################################################
+
+#tabla de hombres
+tabla_hombres <- datosCasen %>% filter(sexo == "Hombre")
+
+#tabla de mujeres
+tabla_mujeres <- datosCasen %>% filter(sexo == "Mujer")
+
+#media de sueldos de hombres 
+media_sueldos_hombres <- median(tabla_hombres[["ytot"]])
+
+#media de sueldos de mujeres
+media_sueldos_mujeres <- median(tabla_mujeres[["ytot"]])
+
+#Se hace un grafico histograma con la relacion de sueldos de hombres y mujeres
+histograma_sueldos <- gghistogram(datosCasen ,
+                     x = "sexo",
+                     bins = 10,
+                     add = "mean",
+                     xlab = "Sexo",
+                     ylab = "Frecuencia",
+                     color = "blue",
+                     fill = "blue")
+############################################################################################################
+########################### FIN SECTOR HISTOGRAMA ##########################################################

@@ -212,8 +212,11 @@ print(graficoBarras_sexo)
 
 
 
+#GRUPO 2
+#¿Cómo diría que es el ingreso de los hombres de la RM (simétrico/asimétrico, concentrado/disperso,
+#unimodal/multimodal, etc.)?
 
-
+sueldosHombres <- datosCasen %>% filter(sexo == "Hombre", region == "RegiÃ³n Metropolitana de Santiago")
 
 ################################ FIN EJERCICIO PRACTICO 2 ############################################
 ######################################################################################################
